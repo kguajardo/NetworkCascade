@@ -3,12 +3,12 @@ This project will look at cascading a property through a social network graph.  
 on certain centrality properties in order to create the maximum cascading effect with the minimum amount of seeding.  
 
 Data:
-The UCSD facebook data from this course will be used.  It is clear that diffusion can only occur in a strongly connected graph given that all the edges in the facebook data are all reciprocal (i.e. if v is friends with u, then u is friends with v).  A quick analysis of the UCSD data:
+The UCSD facebook data will be used.  It is clear that diffusion can only occur in a strongly connected graph given that all the edges in the facebook data are all reciprocal (i.e. if v is friends with u, then u is friends with v).  A quick analysis of the UCSD data:
 
-Data				        # of Vertices		    # of Edges		# of SCC’s
-Facebook_1000.txt		    783			            3784			    1
-Facebook_2000.txt		    1780			          15650			    13*
-Facebook_UCSD.txt	      14948			          886442		    7*
+Data				# of Vertices		    # of Edges		# of SCC’s
+Facebook_1000.txt		    783			        3784			1
+Facebook_2000.txt		    1780			15650			13*
+Facebook_UCSD.txt	      	14948			        886442		   	 7*
 
 *These 13 SCC’s are composed of one large graph with 1755 nodes and 12 very small graphs with 3 or less nodes.
 **These 7 SCC’s are composed of one large graph from 14936 nodes and 6 very small graphs, each with 2 nodes.
